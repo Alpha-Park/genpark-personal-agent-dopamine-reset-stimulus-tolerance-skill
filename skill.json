@@ -1,0 +1,22 @@
+{
+  "name": "genpark-personal-agent-dopamine-reset-stimulus-tolerance-skill",
+  "version": "1.0.0",
+  "description": "Quantifies supernormal stimulus overload (feeds, games, junk food), models striatal D2 receptor down-regulation, and prescribes structured dopamine reset protocols.",
+  "tools": [
+    {
+      "name": "calculate_hedonic_tolerance",
+      "description": "Calculates cumulative supernormal stimulus dose and estimated D2 receptor down-regulation.",
+      "parameters": {
+        "high_stimulus_exposures_daily": "list of objects with {type, duration_minutes, intensity}"
+      }
+    },
+    {
+      "name": "synthesize_dopamine_reset_protocol",
+      "description": "Generates a structured multi-day dopamine reset protocol to restore intrinsic motivation.",
+      "parameters": {
+        "tolerance_score": "float",
+        "reset_duration_days": "int (optional, default 2)"
+      }
+    }
+  ]
+}
